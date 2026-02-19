@@ -1,0 +1,8 @@
+services:
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - MODE=fixed   # cambie a "fixed" para ver mitigaciones simples
+                    # cambie a "vuln" para ir al modo vulnerable
